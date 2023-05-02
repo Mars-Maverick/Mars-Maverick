@@ -1,0 +1,21 @@
+# main menu
+	#create new list
+	#exit
+
+#create new list
+	#scan item
+		#get barcode
+			#scan multiple barcodes
+			#check master list
+			#if barcode not in masterlist
+				#add item to masterlist : Ref, Desc, Barcode
+				#add item to Pick list.
+		#get ref
+		#get desc
+		
+#delete item
+	#get index
+	#del index elem
+	
+
+	
