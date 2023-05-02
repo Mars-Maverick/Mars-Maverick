@@ -1,17 +1,38 @@
+#master list file = "Master_list.txt"
+#current Pick list file = "Picklist.txt"
+#
+#BarCode = input("Scan Barcode now: ")
+#	if BarCode in Master_List:
+		#get ref and desc of item inside text file masterlist.
+		#add ref and desc of item to pick list file and add its quantity by 1 and update list.
+#Scanned items = {BarCode : [ref, desc]}
+#
 # main menu
-	#create new list
-	#exit
+	#New List
+	#Exit
 
-#create new list
-	#scan item
-		#get barcode
+#create new list:
+	#scan item:
+		#get barcode:
 			#scan multiple barcodes
+				#check if you're done scanning all barcodes?
+					
+				#if !not done scanning:
+					#continue scanning.
+				#else:
+					Pass()
+
 			#check master list
-			#if barcode not in masterlist
-				#add item to masterlist : Ref, Desc, Barcode
-				#add item to Pick list.
-		#get ref
-		#get desc
+				#if barcode not in masterlist
+					#input ref:
+					#input desc:
+					#input barcode:
+					#add item to masterlist : Ref, Desc, Barcode
+					#add item to Pick list.
+				#if barcode in master list
+					#add REF, DESC, Barcode to Pick list file.
+					
+				
 		
 #delete item
 	#get index
@@ -19,3 +40,50 @@
 	
 
 	
+#barcode = 1
+
+*************************************************************************
+
+
+ code used to split lines example:
+
+enumerate()
+
+for index, line in enumerate(excelRead, start=1):
+keywrds=[]
+title=line.split("+")
+title=[lines.strip()for lines in title]
+print title[0]
+print index
+
+
+
+
+
+
+
+
+syntax of .index is :   " .index(item, start, end)  "
+
+
+-----*************************************************************************
+
+read lines and add them into a list
+example: 
+load_profile = open('users/file.txt', "r")
+read_it = load_profile.read()
+myLine = ""
+for line in read_it.splitlines():
+    if line == "This is the line I am looking for":
+        myLine = line
+        break
+print myLine
+
+
+
+
+
+
+
+
+
